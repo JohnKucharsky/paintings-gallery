@@ -52,11 +52,7 @@ const Section = ({ paintings, setSearch, blackMode, setBlackMode }) => {
         <input
           placeholder="Search..."
           type="text"
-          onChange={(e) =>{ 
-            setSearch(e.target.value)
-          localStorage.setItem("search", JSON.stringify(e.target.value));
-          
-          }}
+          onChange={(e) =>{setSearch(e.target.value)}
         />
         <ImSun
           onClick={() => {
